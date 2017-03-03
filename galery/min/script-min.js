@@ -1,0 +1,1 @@
+function schowaj(){$("#slider").fadeOut(1e3)}function zmienslajd(){numer++,numer>5&&(numer=1);var e='<img src="img/img'+numer+'.jpg">';document.getElementById("slider").innerHTML=e,$("#slider").fadeIn(1e3),setTimeout("zmienslajd()",5e3),setTimeout("schowaj()",4e3)}var numer=Math.floor(5*Math.random())+1;

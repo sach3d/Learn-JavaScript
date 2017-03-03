@@ -1,0 +1,117 @@
+html, body {
+	background:url("../img/bg.jpg");
+	height: 100%;
+	background-size: cover;
+}
+
+/*****************/
+
+@media (max-width: 768px) {
+	#logo img {
+		width: 50% !important;
+	}
+
+	#counter .countdown {
+		font-size: 1.8em !important;
+	}
+
+	#icons .fa {
+		margin: 7px 3px 0;
+		font-size: 2em;
+	}
+
+	#intro p {
+	font-size: 2.2em !important;
+	line-break: strict;
+}
+}
+
+@media (min-width: 325px)
+and (max-width: 568px) {
+	#logo img {
+		width: 30% !important;
+	}
+    
+/*    #signup .btn-signup {
+		margin-top: 7px;
+	}*/
+
+}
+
+/*****************/
+
+#logo img {
+	padding-top: 10%;
+	margin-bottom: 5%;
+}
+
+#intro p {
+	color: white;
+	text-align: center;
+	font-family: 'Rochester', cursive;
+	font-size: 2.5em;
+	xline-break: strict;
+}
+
+#counter .countdown {
+	text-align: center;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+}
+
+#icons {
+text-align: center;
+}
+
+.fa {
+	color: white;
+	margin: 5px 15px;
+	/*żeby można bylo dodać bouncing effect musimy zadac początkową pozycje*/
+	position: relative; /*pozycjonuje relatywnie do elementu*/
+	bottom: 0; /*zadajemy początkową pozycje*/
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out; /*dodaje plynne przejscia do bounce on hover*/
+}
+
+#icons .twitter:hover {
+	color: #6cadde;
+	bottom: 5px; /*dodajemy bounce on hover */
+}
+
+#icons .facebook:hover {
+	color: #3b5988;
+	bottom: 5px; /*dodajemy bounce on hover */
+}
+
+#icons .google:hover {
+	color: #ea4355;
+	bottom: 5px; /*dodajemy bounce on hover */
+}
+
+#icons .linkedin:hover {
+	color: #0079B0;
+	bottom: 5px; /*dodajemy bounce on hover */
+}
+
+#signup {
+	text-align: center;
+}
+
+#signup .btn-signup {
+	background-color: rgba(161,186,226,0.5);
+	color: white;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+
+#signup .btn-signup:hover {
+	background-color: rgba(37,165,82,1);
+}
+

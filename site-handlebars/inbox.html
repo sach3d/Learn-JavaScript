@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Handelbars Test Project</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="bower_components/handlebars/handlebars.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="menu.js"></script>	
+	<style type="text/css" media="screen">
+		body {
+			margin: 5%;
+			font-size: 2rem;
+		}
+		.inboxRow {
+			width:100%;
+			border: 1px grey solid;
+		}
+		#app > div > div:nth-child(2n) {
+			background-color:red;
+			}
+		
+	</style>
+<script>
+	var module = { template:'' };
+	$(document).ready(function() {
+		paintMenu("mainmenu");
+		loadTemplate('templates/start.js');		
+		var tempFunc = Handlebars.compile(module.template);
+		var data = { title: 'elemenmen' };
+		var html = tempFunc(data);
+		$("#app").html(html);
+    });	
+</script>
+</head>
+<body>
+	<nav id="mainmenu">		
+	</nav>
+	<div id="app"></div>
+
+</body>
+</html>
