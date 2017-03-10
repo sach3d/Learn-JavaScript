@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Handelbars Test Project</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="bower_components/handlebars/handlebars.min.js"></script>
+</head>
+<body style="margin:5%">
+	<div id="app"></div>	
+
+
+<header>
+  <h1>Header - Main Page Title</h1>
+  <img  onhover="filter: blur(5px);" src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="MDN logo">
+</header>
+
+
+<a href="#" 
+onmouseover = "this.style.textDecoration = 'none'"
+onmouseout  = "this.style.textDecoration = 'underline'">
+Hello
+</a>
+
+<p></p>
+<hr>
+<p></p>
+
+<label>Choose a browser from this list:
+<input list="browsers" name="myBrowser" /></label>
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Internet Explorer">
+  <option value="Opera">
+  <option value="Safari">
+  <option value="Microsoft Edge">
+</datalist>
+
+<p><del>This text has been deleted</del>,
+here is the rest of the paragraph.</p>
+<del><p>This paragraph has been deleted.</p></del>
+
+<form action="test.php" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" id="radio">
+    <label for="radio">Click me</label>
+  </fieldset>
+</form>
+
+<!-- Just a figure -->
+<figure>
+  <img
+  src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png"
+  alt="An awesome picture">
+</figure>
+<p></p>
+<!-- Figure with figcaption -->
+<figure>
+  <img
+  src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png"
+  alt="An awesome picture">	
+  <figcaption>Fig1. MDN Logo</figcaption>
+</figure>
+
+<footer>
+  Some copyright info or perhaps some author
+  info for an &lt;article&gt;?
+</footer>
+<p></p>
+
+<!-- Simple form which will send a GET request -->
+<form action="">
+  <label for="GET-name">Name:</label>
+  <input id="GET-name" type="text">
+  <input type="submit" value="Save">
+</form>
+
+<!-- Simple form which will send a POST request -->
+<form action="" method="post">
+  <label for="POST-name">Name:</label>
+  <input id="POST-name" type="text">
+  <input type="submit" value="Save">
+</form>
+
+<!-- Form with fieldset, legend, and label -->
+<form action="" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" id="radio">
+    <label for="radio">Click me</label>
+  </fieldset>
+</form>
+
+<p>Type the following in the Run dialog:
+  <kbd>cmd</kbd><br />Then click the OK button.</p>
+
+<p>Save the document by pressing
+  <kbd>Ctrl</kbd> + <kbd>S</kbd> + <kbd>:</kbd></p>
+
+  <label>Click me <input type="text"></label>
+  
+<label for="username">Click me</label>
+<input type="text" id="username">
+
+<p>The &lt;mark&gt; element is used to<mark>highlight</mark> text</p>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="result">60</output>
+</form>
+
+<p></p>
+
+<progress value="70" max="100">70 %</progress>
+
+<p>Regular text. <samp>This is sample text.</samp>
+  Regular text.</p>
+
+<h3>Select tag</h3>
+<!-- The second value will be selected initially -->
+<select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+<p></p>
+
+<p>The concert took place on <time
+  datetime="2001-05-15T19:00">May 15 20:00</time>.</p>
+
+<video controls poster="/images/sample.gif">
+   <source src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4" type="video/mp4">
+   <source src="sample.ogv" type="video/ogv">
+   <track kind="captions" src="sampleCaptions.vtt" srclang="en">
+   <track kind="descriptions"
+     src="sampleDescriptions.vtt" srclang="en">
+   <track kind="chapters" src="sampleChapters.vtt" srclang="en">
+   <track kind="subtitles" src="sampleSubtitles_de.vtt" srclang="de">
+   <track kind="subtitles" src="sampleSubtitles_en.vtt" srclang="en">
+   <track kind="subtitles" src="sampleSubtitles_ja.vtt" srclang="ja">
+   <track kind="subtitles" src="sampleSubtitles_oz.vtt" srclang="oz">
+   <track kind="metadata" src="keyStage1.vtt" srclang="en"
+     label="Key Stage 1">
+   <track kind="metadata" src="keyStage2.vtt" srclang="en"
+     label="Key Stage 2">
+   <track kind="metadata" src="keyStage3.vtt" srclang="en"
+     label="Key Stage 3">
+   <!-- Fallback -->
+   ...
+</video>
+
+<p>http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</p>
+
+<br /><br />
+
+<textarea name="textarea"
+   rows="10" cols="50" placeholder="Write something here"></textarea>
+
+<p>The chemical formula of water: H<sub>2</sub>O</p>
+<p>This text is <sup>superscripted</sup></p>
+
+<!-- Some example CSS code -->
+<pre>
+body {
+  color:red;
+}
+</pre>
+<p></p>
+<code>
+body {
+  color:red;
+}
+</code>
+
+  	<script>
+  		var template = Handlebars.compile("<div>Hello {{name}}</div>");
+  		var appEl = document.getElementById("app");
+  		appEl.innerHTML = template({ name: "Handlebars"});
+  	</script>
+
+</body>
+</html>

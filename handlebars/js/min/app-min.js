@@ -1,0 +1,1 @@
+!function(){function n(){var n=$("#index-template").html(),a=Handlebars.compile(n),i=a(window.language);$("#main").html(i),$("LanguageSwitch").click(function(){DogPack.switchLanguage()})}n()}();
