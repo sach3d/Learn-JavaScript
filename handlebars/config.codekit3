@@ -7,7 +7,7 @@
 		"uuidString": "BE43A465-C480-4E57-AAF5-61C62BFA16F3"
 		}
 	],
-"creatorBuild": "25701",
+"creatorBuild": "25704",
 "files": {
 	"\/bower.json": {
 		"ft": 524288,
@@ -3277,6 +3277,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/css\/stylesheet-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/stylesheet-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/stylesheet.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3547,247 +3557,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/pluralsight-handlebars-starter-code-master\/css\/stylesheet.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/css\/stylesheet-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/bubby_bunny.jpg": {
-		"ft": 16384,
-		"iS": 57514,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/bubby_bunny.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/bunny_dog.jpg": {
-		"ft": 16384,
-		"iS": 70464,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/bunny_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/caged_heat.jpg": {
-		"ft": 16384,
-		"iS": 60555,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/caged_heat.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/cloudy_bunny.jpg": {
-		"ft": 16384,
-		"iS": 65217,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/cloudy_bunny.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/curious_pig.jpg": {
-		"ft": 16384,
-		"iS": 56814,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/curious_pig.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/cute_otter.jpg": {
-		"ft": 16384,
-		"iS": 73385,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/cute_otter.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/dgaf_dog.jpg": {
-		"ft": 16384,
-		"iS": 43457,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/dgaf_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/exorcist_dog.jpg": {
-		"ft": 16384,
-		"iS": 48586,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/exorcist_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/goofy_dog.jpg": {
-		"ft": 16384,
-		"iS": 58047,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/goofy_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/gremlin_dog.jpg": {
-		"ft": 16384,
-		"iS": 67792,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/gremlin_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/meditating_cat.jpg": {
-		"ft": 16384,
-		"iS": 46326,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/meditating_cat.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/middlefinger_otter.jpg": {
-		"ft": 16384,
-		"iS": 48152,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/middlefinger_otter.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/moonwalking_goat.jpg": {
-		"ft": 16384,
-		"iS": 41018,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/moonwalking_goat.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/panda_dog.jpg": {
-		"ft": 16384,
-		"iS": 45086,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/panda_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/party_dog.jpg": {
-		"ft": 16384,
-		"iS": 70108,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/party_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/sad_pony.jpg": {
-		"ft": 16384,
-		"iS": 43898,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/sad_pony.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/salary_dog.jpg": {
-		"ft": 16384,
-		"iS": 40925,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/salary_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/startled_dog.jpg": {
-		"ft": 16384,
-		"iS": 54815,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/startled_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/teacup_pig.jpg": {
-		"ft": 16384,
-		"iS": 50609,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/teacup_pig.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/towel_dog.jpg": {
-		"ft": 16384,
-		"iS": 66905,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/towel_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/triplethreat_dog.jpg": {
-		"ft": 16384,
-		"iS": 41421,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/triplethreat_dog.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/images\/ultimate_quokka.jpg": {
-		"ft": 16384,
-		"iS": 41886,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/images\/ultimate_quokka.jpg",
-		"oF": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/pluralsight-handlebars-starter-code-master\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/index.html",
-		"oF": 0
-		},
-	"\/pluralsight-handlebars-starter-code-master\/js\/dogPack.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/js\/min\/dogPack-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/pluralsight-handlebars-starter-code-master\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/pluralsight-handlebars-starter-code-master\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		}
 	},
 "hooks": [

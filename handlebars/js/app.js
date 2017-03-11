@@ -1,6 +1,5 @@
 (function(){
 	
-	renderPage();
 
 	function renderPage(){
 		var template = $('#index-template').html(),
@@ -8,8 +7,11 @@
 			rendered = compiled(window.language);
 
 		$('#main').html(rendered);
-		$('LanguageSwitch').click(function(){
+		$('#languageSwitch').click(function(){
 			DogPack.switchLanguage();
-		}); 
+			//console.log(typeof(DogPack));
+		});
 	}
-})();
+	renderPage();
+}());
+
