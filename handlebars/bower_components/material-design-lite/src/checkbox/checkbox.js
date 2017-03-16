@@ -23,7 +23,6 @@
    * Implements MDL component design pattern defined at:
    * https://github.com/jasonmayes/mdl-component-design-pattern
    *
-   * @constructor
    * @param {HTMLElement} element The element that will be upgraded.
    */
   var MaterialCheckbox = function MaterialCheckbox(element) {
@@ -32,12 +31,12 @@
     // Initialize instance.
     this.init();
   };
-  window['MaterialCheckbox'] = MaterialCheckbox;
+  window.MaterialCheckbox = MaterialCheckbox;
 
   /**
    * Store constants in one place so they can be updated easily.
    *
-   * @enum {string | number}
+   * @enum {String | Number}
    * @private
    */
   MaterialCheckbox.prototype.Constant_ = {
@@ -49,7 +48,7 @@
    * JavaScript. This allows us to simply change it in one place should we
    * decide to modify at a later date.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialCheckbox.prototype.CssClasses_ = {
@@ -121,14 +120,15 @@
   /**
    * Add blur.
    *
+   * @param {Event} event The event that fired.
    * @private
    */
-  MaterialCheckbox.prototype.blur_ = function() {
+  MaterialCheckbox.prototype.blur_ = function(event) {
     // TODO: figure out why there's a focus event being fired after our blur,
     // so that we can avoid this hack.
     window.setTimeout(function() {
       this.inputElement_.blur();
-    }.bind(this), /** @type {number} */ (this.Constant_.TINY_TIMEOUT));
+    }.bind(this), this.Constant_.TINY_TIMEOUT);
   };
 
   // Public methods.
@@ -145,8 +145,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
     }
   };
-  MaterialCheckbox.prototype['checkToggleState'] =
-      MaterialCheckbox.prototype.checkToggleState;
 
   /**
    * Check the inputs disabled state and update display.
@@ -160,8 +158,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
     }
   };
-  MaterialCheckbox.prototype['checkDisabled'] =
-      MaterialCheckbox.prototype.checkDisabled;
 
   /**
    * Disable checkbox.
@@ -172,7 +168,6 @@
     this.inputElement_.disabled = true;
     this.updateClasses_();
   };
-  MaterialCheckbox.prototype['disable'] = MaterialCheckbox.prototype.disable;
 
   /**
    * Enable checkbox.
@@ -183,7 +178,6 @@
     this.inputElement_.disabled = false;
     this.updateClasses_();
   };
-  MaterialCheckbox.prototype['enable'] = MaterialCheckbox.prototype.enable;
 
   /**
    * Check checkbox.
@@ -194,7 +188,6 @@
     this.inputElement_.checked = true;
     this.updateClasses_();
   };
-  MaterialCheckbox.prototype['check'] = MaterialCheckbox.prototype.check;
 
   /**
    * Uncheck checkbox.
@@ -205,7 +198,6 @@
     this.inputElement_.checked = false;
     this.updateClasses_();
   };
-  MaterialCheckbox.prototype['uncheck'] = MaterialCheckbox.prototype.uncheck;
 
   /**
    * Initialize element.
@@ -256,6 +248,21 @@
       this.updateClasses_();
       this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
     }
+  };
+
+  /**
+   * Downgrade the component.
+   *
+   * @private
+   */
+  MaterialCheckbox.prototype.mdlDowngrade_ = function() {
+    if (this.rippleContainerElement_) {
+      this.rippleContainerElement_.removeEventListener('mouseup', this.boundRippleMouseUp);
+    }
+    this.inputElement_.removeEventListener('change', this.boundInputOnChange);
+    this.inputElement_.removeEventListener('focus', this.boundInputOnFocus);
+    this.inputElement_.removeEventListener('blur', this.boundInputOnBlur);
+    this.element_.removeEventListener('mouseup', this.boundElementMouseUp);
   };
 
   // The component registers itself. It can assume componentHandler is available

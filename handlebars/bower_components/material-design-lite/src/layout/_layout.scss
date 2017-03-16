@@ -28,13 +28,9 @@
 .mdl-navigation__link {
   color: $layout-text-color;
   text-decoration: none;
+  font-weight: 500;
+  font-size: $layout-nav-link-font-size;
   margin: 0;
-  @include typo-body-1(true);
-
-  // Align icons inside link with text
-  & .material-icons {
-    vertical-align: middle;
-  }
 }
 
 // Main layout class.
@@ -66,7 +62,6 @@
 
 
   // Optional utility classes for formatting special blocks in this component.
-  .mdl-layout__title,
   .mdl-layout-title {
     display: block;
     position: relative;
@@ -118,16 +113,12 @@
 
     &.is-visible {
       transform: translateX(0);
-      & ~ .mdl-layout__content.mdl-layout__content {
-        overflow: hidden;
-      }
     }
 
     & > * {
       flex-shrink: 0;
     }
 
-    & > .mdl-layout__title,
     & > .mdl-layout-title {
       line-height: $layout-desktop-header-height;
       padding-left: $layout-header-desktop-indent;
@@ -189,9 +180,9 @@
     text-align: center;
     cursor: pointer;
     font-size: 26px;
-    line-height: $layout-mobile-header-height;
+    line-height: $layout-drawer-button-desktop-size + 2;
     font-family: Helvetica, Arial, sans-serif;
-    margin: ($layout-mobile-header-height - $layout-drawer-button-desktop-size) 12px;
+    margin: 10px 12px;
     top: 0;
     left: 0;
     color: $layout-header-text-color;
@@ -214,11 +205,7 @@
     }
 
     @media screen and (min-width: $layout-screen-size-threshold + 1px) {
-      line-height: 54px;
-
-      .mdl-layout--no-desktop-drawer-button &,
-      .mdl-layout--fixed-drawer > &,
-      .mdl-layout--no-drawer-button & {
+      .mdl-layout--fixed-drawer > & {
         display: none;
       }
     }
@@ -251,12 +238,12 @@
       min-height: $layout-mobile-header-height;
     }
 
-    .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > & {
+    .mdl-layout--fixed-drawer:not(.is-small-screen) > & {
       margin-left: $layout-drawer-width;
       width: calc(100% - #{$layout-drawer-width});
     }
 
-    @media screen and (min-width: $layout-screen-size-threshold + 1px) {
+    @media screen and (min-width: $layout-screen-size-threshold) {
       .mdl-layout--fixed-drawer > & {
         .mdl-layout__header-row {
           padding-left: 40px;
@@ -331,10 +318,6 @@
       &.is-casting-shadow {
         @include shadow-2dp();
       }
-
-      &.mdl-layout__header--waterfall-hide-top {
-        justify-content: flex-end;
-      }
     }
 
     .mdl-layout__header-row {
@@ -349,23 +332,9 @@
       margin: 0;
       padding: 0 $layout-header-desktop-indent 0 $layout-header-desktop-baseline;
 
-      .mdl-layout--no-drawer-button & {
-        padding-left: $layout-header-desktop-indent;
-      }
-
-      @media screen and (min-width: $layout-screen-size-threshold + 1px) {
-        .mdl-layout--no-desktop-drawer-button & {
-          padding-left: $layout-header-desktop-indent;
-        }
-      }
-
       @media screen and (max-width: $layout-screen-size-threshold) {
         height: $layout-header-mobile-row-height;
         padding: 0 $layout-header-mobile-indent 0 $layout-header-mobile-baseline;
-
-        .mdl-layout--no-drawer-button & {
-          padding-left: $layout-header-mobile-indent;
-        }
       }
 
       & > * {
@@ -398,8 +367,7 @@
           line-height: $layout-header-mobile-row-height;
           padding: 0 $layout-header-mobile-indent;
         }
-      }
-    }
+      }    }
 
   // Obfuscator.
   .mdl-layout__obfuscator {
@@ -414,21 +382,9 @@
     transition-property: background-color;
     @include material-animation-default();
 
-    &.is-visible {
+    .mdl-layout__drawer.is-visible ~ & {
       background-color: rgba(0, 0, 0, 0.5);
       visibility: visible;
-    }
-
-    @supports (pointer-events: auto) {
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition-property: opacity;
-      visibility: visible;
-      pointer-events: none;
-      &.is-visible {
-        pointer-events: auto;
-        opacity: 1;
-      }
     }
   }
 
@@ -438,7 +394,6 @@
     // Fix IE10 bug.
     -ms-flex: 0 1 auto;
 
-    position: relative;
     display: inline-block;
     overflow-y: auto;
     overflow-x: hidden;
@@ -483,31 +438,11 @@
       display: none;
     }
 
-    .mdl-layout--no-drawer-button & {
-      padding-left: $layout-header-desktop-indent - $layout-tab-desktop-padding;
-      width: calc(100% -
-          #{(($layout-header-desktop-indent - $layout-tab-desktop-padding) * 2)});
-    }
-
-    @media screen and (min-width: $layout-screen-size-threshold + 1px) {
-      .mdl-layout--no-desktop-drawer-button & {
-        padding-left: $layout-header-desktop-indent - $layout-tab-desktop-padding;
-        width: calc(100% -
-            #{(($layout-header-desktop-indent - $layout-tab-desktop-padding) * 2)});
-      }
-    }
-
     @media screen and (max-width: $layout-screen-size-threshold) {
       width: calc(100% -
           #{($layout-header-mobile-baseline - $layout-tab-mobile-padding)});
       padding: 0 0 0
           ($layout-header-mobile-baseline - $layout-tab-mobile-padding);
-
-      .mdl-layout--no-drawer-button & {
-        width: calc(100% -
-            #{(($layout-header-mobile-indent - $layout-tab-mobile-padding) * 2)});
-        padding-left: $layout-header-mobile-indent - $layout-tab-mobile-padding;
-      }
     }
 
     .mdl-layout--fixed-tabs & {
@@ -548,17 +483,8 @@
     cursor: pointer;
     user-select: none;
 
-    .mdl-layout--no-desktop-drawer-button &,
-    .mdl-layout--no-drawer-button & {
-      width: $layout-header-desktop-indent - $layout-tab-desktop-padding;
-
-      & .material-icons {
-        position: relative;
-        left: ($layout-header-desktop-indent - $layout-tab-desktop-padding - 24px) / 2;
-      }
-    }
-
     @media screen and (max-width: $layout-screen-size-threshold) {
+      display: none;
       width: $layout-header-mobile-baseline - $layout-tab-mobile-padding;
     }
 

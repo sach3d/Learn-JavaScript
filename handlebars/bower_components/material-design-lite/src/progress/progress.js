@@ -23,7 +23,6 @@
    * Implements MDL component design pattern defined at:
    * https://github.com/jasonmayes/mdl-component-design-pattern
    *
-   * @constructor
    * @param {HTMLElement} element The element that will be upgraded.
    */
   var MaterialProgress = function MaterialProgress(element) {
@@ -32,12 +31,12 @@
     // Initialize instance.
     this.init();
   };
-  window['MaterialProgress'] = MaterialProgress;
+  window.MaterialProgress = MaterialProgress;
 
   /**
    * Store constants in one place so they can be updated easily.
    *
-   * @enum {string | number}
+   * @enum {String | Number}
    * @private
    */
   MaterialProgress.prototype.Constant_ = {
@@ -48,7 +47,7 @@
    * JavaScript. This allows us to simply change it in one place should we
    * decide to modify at a later date.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialProgress.prototype.CssClasses_ = {
@@ -58,7 +57,7 @@
   /**
    * Set the current progress of the progressbar.
    *
-   * @param {number} p Percentage of the progress (0-100)
+   * @param {Number} p Percentage of the progress (0-100)
    * @public
    */
   MaterialProgress.prototype.setProgress = function(p) {
@@ -68,21 +67,17 @@
 
     this.progressbar_.style.width = p + '%';
   };
-  MaterialProgress.prototype['setProgress'] =
-      MaterialProgress.prototype.setProgress;
 
   /**
    * Set the current progress of the buffer.
    *
-   * @param {number} p Percentage of the buffer (0-100)
+   * @param {Number} p Percentage of the buffer (0-100)
    * @public
    */
   MaterialProgress.prototype.setBuffer = function(p) {
     this.bufferbar_.style.width = p + '%';
     this.auxbar_.style.width = (100 - p) + '%';
   };
-  MaterialProgress.prototype['setBuffer'] =
-      MaterialProgress.prototype.setBuffer;
 
   /**
    * Initialize element.
@@ -109,6 +104,17 @@
       this.auxbar_.style.width = '0%';
 
       this.element_.classList.add('is-upgraded');
+    }
+  };
+
+  /**
+   * Downgrade the component
+   *
+   * @private
+   */
+  MaterialProgress.prototype.mdlDowngrade_ = function() {
+    while (this.element_.firstChild) {
+      this.element_.removeChild(this.element_.firstChild);
     }
   };
 

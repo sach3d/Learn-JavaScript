@@ -47,33 +47,12 @@
       return Math.floor((window.innerWidth - dogsPadding) / dogWidth) * 2;
     };
 
-    dh.getPaginatedDogs = function(dogs) {
-      var params = DogPack.parseUrl(),
-          dogPage = params.page || 1,
+    dh.getPaginatedDogs = function(pageNum, dogs) {
+      var dogPage = pageNum || 1,
     			dogCount = dh.getNumberOfDogs(),
     			start = (dogPage - 1) * dogCount,
     			stop = dogPage * dogCount;
       return dogs.slice(start, stop);
-    };
-
-    dh.getFilteredDogs = function(dogs) {
-      var params = DogPack.parseUrl(),
-          tempDogs = dogs;
-      if(params.filter) {
-    		tempDogs = dogs.filter(function(dog) {
-    			switch(params.filter) {
-    				case 'dogs':
-    					return DogPack.isRightDog(dog);
-    				case 'not_dogs':
-    					return DogPack.isRightNotDog(dog);
-    				case 'maybe_dogs':
-    					return DogPack.isMaybeDog(dog);
-    				default:
-    					return false;
-    			}
-    		});
-    	}
-      return tempDogs;
     };
 
     function Dog(id, image, name, isDog, chosen) {
@@ -85,7 +64,7 @@
       this.isCorrect = function() {
         return (this.chosen === 'dog' && this.isDog) ||
       		(this.chosen === 'not dog' && !this.isDog);
-      }
+      };
       return this;
     }
 
@@ -140,27 +119,6 @@
       dh.dogs = dh.initDogs();
     };
 
-    dh.scoreDogs = function(dogs) {
-      var correct = 0,
-          incorrect = 0,
-          incomplete = dogs.length;
-      $.each(dogs, function(ix, dog) {
-        if (dog.chosen) {
-          incomplete--;
-          if (dog.isCorrect()) {
-            correct++;
-          } else {
-            incorrect++;
-          }
-        }
-      });
-      return {
-        correct: correct,
-        incorrect: incorrect,
-        incomplete: incomplete
-      };
-    };
-
     dh.parseUrl = function() {
     	var queryParams = window.location.search.slice(1).split('&'),
     	    paramsObj = {};
@@ -176,7 +134,7 @@
       var queryParams = dh.parseUrl(),
           returnString = '?';
       for (var key in queryParams) {
-        if (!excludes || excludes.indexOf(key) < 0) {
+        if (excludes.indexOf(key) < 0) {
           returnString += key + '=' + queryParams[key] + '&';
         }
       }

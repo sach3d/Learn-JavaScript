@@ -1,17 +1,16 @@
-(function(){
-	
+(function() {
 
-	function renderPage(){
-		var template = $('#index-template').html(),
-			compiled = Handlebars.compile(template),
-			rendered = compiled(window.language);
+    renderPage();
 
-		$('#main').html(rendered);
-		$('#languageSwitch').click(function(){
-			DogPack.switchLanguage();
-			//console.log(typeof(DogPack));
-		});
-	}
-	renderPage();
-}());
+    function renderPage() {
+        var template = $('#index-template').html(),
+            compiled = Handlebars.compile(template),
+            rendered = compiled(window.language);
+        $('#main').html(rendered);
 
+        $('#languageSwitch').click(function() {
+            DogPack.switchLanguage();
+        });
+    }
+
+})();

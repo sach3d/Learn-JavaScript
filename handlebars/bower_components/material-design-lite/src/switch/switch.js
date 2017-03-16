@@ -23,7 +23,6 @@
    * Implements MDL component design pattern defined at:
    * https://github.com/jasonmayes/mdl-component-design-pattern
    *
-   * @constructor
    * @param {HTMLElement} element The element that will be upgraded.
    */
   var MaterialSwitch = function MaterialSwitch(element) {
@@ -32,12 +31,12 @@
     // Initialize instance.
     this.init();
   };
-  window['MaterialSwitch'] = MaterialSwitch;
+  window.MaterialSwitch = MaterialSwitch;
 
   /**
    * Store constants in one place so they can be updated easily.
    *
-   * @enum {string | number}
+   * @enum {String | Number}
    * @private
    */
   MaterialSwitch.prototype.Constant_ = {
@@ -49,7 +48,7 @@
    * JavaScript. This allows us to simply change it in one place should we
    * decide to modify at a later date.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialSwitch.prototype.CssClasses_ = {
@@ -122,12 +121,12 @@
    *
    * @private
    */
-  MaterialSwitch.prototype.blur_ = function() {
+  MaterialSwitch.prototype.blur_ = function(event) {
     // TODO: figure out why there's a focus event being fired after our blur,
     // so that we can avoid this hack.
     window.setTimeout(function() {
       this.inputElement_.blur();
-    }.bind(this), /** @type {number} */ (this.Constant_.TINY_TIMEOUT));
+    }.bind(this), this.Constant_.TINY_TIMEOUT);
   };
 
   // Public methods.
@@ -144,8 +143,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
     }
   };
-  MaterialSwitch.prototype['checkDisabled'] =
-      MaterialSwitch.prototype.checkDisabled;
 
   /**
    * Check the components toggled state.
@@ -159,8 +156,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
     }
   };
-  MaterialSwitch.prototype['checkToggleState'] =
-      MaterialSwitch.prototype.checkToggleState;
 
   /**
    * Disable switch.
@@ -171,7 +166,6 @@
     this.inputElement_.disabled = true;
     this.updateClasses_();
   };
-  MaterialSwitch.prototype['disable'] = MaterialSwitch.prototype.disable;
 
   /**
    * Enable switch.
@@ -182,7 +176,6 @@
     this.inputElement_.disabled = false;
     this.updateClasses_();
   };
-  MaterialSwitch.prototype['enable'] = MaterialSwitch.prototype.enable;
 
   /**
    * Activate switch.
@@ -193,7 +186,6 @@
     this.inputElement_.checked = true;
     this.updateClasses_();
   };
-  MaterialSwitch.prototype['on'] = MaterialSwitch.prototype.on;
 
   /**
    * Deactivate switch.
@@ -204,7 +196,6 @@
     this.inputElement_.checked = false;
     this.updateClasses_();
   };
-  MaterialSwitch.prototype['off'] = MaterialSwitch.prototype.off;
 
   /**
    * Initialize element.
@@ -260,6 +251,21 @@
       this.updateClasses_();
       this.element_.classList.add('is-upgraded');
     }
+  };
+
+  /**
+   * Downgrade the component.
+   *
+   * @private
+   */
+  MaterialSwitch.prototype.mdlDowngrade_ = function() {
+    if (this.rippleContainerElement_) {
+      this.rippleContainerElement_.removeEventListener('mouseup', this.boundMouseUpHandler);
+    }
+    this.inputElement_.removeEventListener('change', this.boundChangeHandler);
+    this.inputElement_.removeEventListener('focus', this.boundFocusHandler);
+    this.inputElement_.removeEventListener('blur', this.boundBlurHandler);
+    this.element_.removeEventListener('mouseup', this.boundMouseUpHandler);
   };
 
   // The component registers itself. It can assume componentHandler is available

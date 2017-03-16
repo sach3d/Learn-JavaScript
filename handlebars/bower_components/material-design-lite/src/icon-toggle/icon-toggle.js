@@ -23,7 +23,6 @@
    * Implements MDL component design pattern defined at:
    * https://github.com/jasonmayes/mdl-component-design-pattern
    *
-   * @constructor
    * @param {HTMLElement} element The element that will be upgraded.
    */
   var MaterialIconToggle = function MaterialIconToggle(element) {
@@ -32,12 +31,12 @@
     // Initialize instance.
     this.init();
   };
-  window['MaterialIconToggle'] = MaterialIconToggle;
+  window.MaterialIconToggle = MaterialIconToggle;
 
   /**
    * Store constants in one place so they can be updated easily.
    *
-   * @enum {string | number}
+   * @enum {String | Number}
    * @private
    */
   MaterialIconToggle.prototype.Constant_ = {
@@ -49,7 +48,7 @@
    * JavaScript. This allows us to simply change it in one place should we
    * decide to modify at a later date.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialIconToggle.prototype.CssClasses_ = {
@@ -117,14 +116,15 @@
   /**
    * Add blur.
    *
+   * @param {Event} event The event that fired.
    * @private
    */
-  MaterialIconToggle.prototype.blur_ = function() {
+  MaterialIconToggle.prototype.blur_ = function(event) {
     // TODO: figure out why there's a focus event being fired after our blur,
     // so that we can avoid this hack.
     window.setTimeout(function() {
       this.inputElement_.blur();
-    }.bind(this), /** @type {number} */ (this.Constant_.TINY_TIMEOUT));
+    }.bind(this), this.Constant_.TINY_TIMEOUT);
   };
 
   // Public methods.
@@ -141,8 +141,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_CHECKED);
     }
   };
-  MaterialIconToggle.prototype['checkToggleState'] =
-      MaterialIconToggle.prototype.checkToggleState;
 
   /**
    * Check the inputs disabled state and update display.
@@ -156,8 +154,6 @@
       this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
     }
   };
-  MaterialIconToggle.prototype['checkDisabled'] =
-      MaterialIconToggle.prototype.checkDisabled;
 
   /**
    * Disable icon toggle.
@@ -168,8 +164,6 @@
     this.inputElement_.disabled = true;
     this.updateClasses_();
   };
-  MaterialIconToggle.prototype['disable'] =
-      MaterialIconToggle.prototype.disable;
 
   /**
    * Enable icon toggle.
@@ -180,7 +174,6 @@
     this.inputElement_.disabled = false;
     this.updateClasses_();
   };
-  MaterialIconToggle.prototype['enable'] = MaterialIconToggle.prototype.enable;
 
   /**
    * Check icon toggle.
@@ -191,7 +184,6 @@
     this.inputElement_.checked = true;
     this.updateClasses_();
   };
-  MaterialIconToggle.prototype['check'] = MaterialIconToggle.prototype.check;
 
   /**
    * Uncheck icon toggle.
@@ -202,8 +194,6 @@
     this.inputElement_.checked = false;
     this.updateClasses_();
   };
-  MaterialIconToggle.prototype['uncheck'] =
-      MaterialIconToggle.prototype.uncheck;
 
   /**
    * Initialize element.
@@ -242,6 +232,21 @@
       this.updateClasses_();
       this.element_.classList.add('is-upgraded');
     }
+  };
+
+  /**
+   * Downgrade the component
+   *
+   * @private
+   */
+  MaterialIconToggle.prototype.mdlDowngrade_ = function() {
+    if (this.rippleContainerElement_) {
+      this.rippleContainerElement_.removeEventListener('mouseup', this.boundRippleMouseUp);
+    }
+    this.inputElement_.removeEventListener('change', this.boundInputOnChange);
+    this.inputElement_.removeEventListener('focus', this.boundInputOnFocus);
+    this.inputElement_.removeEventListener('blur', this.boundInputOnBlur);
+    this.element_.removeEventListener('mouseup', this.boundElementOnMouseUp);
   };
 
   // The component registers itself. It can assume componentHandler is available

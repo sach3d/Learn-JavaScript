@@ -23,8 +23,7 @@
    * Implements MDL component design pattern defined at:
    * https://github.com/jasonmayes/mdl-component-design-pattern
    *
-   * @constructor
-   * @param {Element} element The element that will be upgraded.
+   * @param {HTMLElement} element The element that will be upgraded.
    */
   var MaterialTabs = function MaterialTabs(element) {
     // Stores the HTML element.
@@ -33,12 +32,12 @@
     // Initialize instance.
     this.init();
   };
-  window['MaterialTabs'] = MaterialTabs;
+  window.MaterialTabs = MaterialTabs;
 
   /**
    * Store constants in one place so they can be updated easily.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialTabs.prototype.Constant_ = {
@@ -50,7 +49,7 @@
    * JavaScript. This allows us to simply change it in one place should we
    * decide to modify at a later date.
    *
-   * @enum {string}
+   * @enum {String}
    * @private
    */
   MaterialTabs.prototype.CssClasses_ = {
@@ -120,13 +119,6 @@
     }
   };
 
-  /**
-   * Constructor for an individual tab.
-   *
-   * @constructor
-   * @param {Element} tab The HTML element for the tab.
-   * @param {MaterialTabs} ctx The MaterialTabs object that owns the tab.
-   */
   function MaterialTab(tab, ctx) {
     if (tab) {
       if (ctx.element_.classList.contains(ctx.CssClasses_.MDL_JS_RIPPLE_EFFECT)) {
@@ -140,15 +132,13 @@
       }
 
       tab.addEventListener('click', function(e) {
-        if (tab.getAttribute('href').charAt(0) === '#') {
-          e.preventDefault();
-          var href = tab.href.split('#')[1];
-          var panel = ctx.element_.querySelector('#' + href);
-          ctx.resetTabState_();
-          ctx.resetPanelState_();
-          tab.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
-          panel.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
-        }
+        e.preventDefault();
+        var href = tab.href.split('#')[1];
+        var panel = ctx.element_.querySelector('#' + href);
+        ctx.resetTabState_();
+        ctx.resetPanelState_();
+        tab.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
+        panel.classList.add(ctx.CssClasses_.ACTIVE_CLASS);
       });
 
     }
