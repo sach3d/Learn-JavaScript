@@ -1,0 +1,29 @@
+.button:visited {
+  color: blue; }
+
+.button:hover {
+  color: red; }
+
+.button:active {
+  color: yellow; }
+
+.button > span {
+  color: blue; }
+
+.button + span {
+  color: Navy; }
+
+.button ~ span {
+  color: cyan; }
+
+.button-primary {
+  color: blue; }
+
+.button-secondary {
+  color: red; }
+
+body.page-about .button {
+  color: white; }
+
+p ~ span {
+  color: red; }

@@ -1,0 +1,1177 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"butt",
+				"button"
+			],
+			[
+				"swi",
+				"switchLanguage\t(dogPack.js)"
+			],
+			[
+				"ty",
+				"typeof(aSome)"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"ren",
+				"renderPage()\tapp.js"
+			],
+			[
+				"lang",
+				"languageFilter\t(dogPack.js)"
+			],
+			[
+				"inco",
+				"incompleteFilter\t(dogPack.js)"
+			],
+			[
+				"site",
+				"siteTitle\t(dogPack.js)"
+			],
+			[
+				"Do",
+				"DogPack\t(dogPack.js)"
+			],
+			[
+				"ht",
+				"html〔function〕"
+			],
+			[
+				"com",
+				"compiled"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"C",
+				"CSS3"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"lo",
+				"logotypes"
+			],
+			[
+				"trf",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"ff",
+				"ffa\t@font-face"
+			],
+			[
+				"f",
+				"ff\tfont-family"
+			],
+			[
+				"art",
+				"article\tTag"
+			],
+			[
+				"sty",
+				"style\t<style>"
+			],
+			[
+				"bl",
+				"blur()"
+			],
+			[
+				"app",
+				"appEl"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"non",
+				"none"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pull",
+				"pull-right \tBootstrap 3 Class"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"conte",
+				"align-content"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"jus",
+				"justify-content-around"
+			],
+			[
+				"justify-content-",
+				"justify-content-start \tBootstrap 4 Class"
+			],
+			[
+				"btn-danger",
+				"btn-danger \tBootstrap 4 Class"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"upp",
+				"uppercase"
+			],
+			[
+				"rgba",
+				"rgba()"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"footer",
+				"card-footer \tBootstrap 4 Class"
+			],
+			[
+				"b",
+				"banerek-home-save-tlo.jpg\tw:1600 h:498"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"cent",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"im",
+				"img/"
+			],
+			[
+				"cont",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"text-cen",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"list",
+				"list:n\tlist-style-type:none"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"navbar-f",
+				"navbar-fixed-top \tBootstrap 3 Class"
+			],
+			[
+				"sp",
+				"span"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ale",
+				"alert〔function〕"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"zmie",
+				"zmienslajd()"
+			],
+			[
+				"sli",
+				"slider\t(index.html)"
+			],
+			[
+				"get",
+				"getElementById('aSome')"
+			],
+			[
+				"li",
+				"liczba2\tindex.html"
+			],
+			[
+				"alert",
+				"alert(aSome)"
+			],
+			[
+				"aler",
+				"alert(aSome)"
+			],
+			[
+				"wyn",
+				"wynik2"
+			],
+			[
+				"lic",
+				"liczba2"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"licz",
+				"liczba1"
+			],
+			[
+				"id",
+				"id\tAttr"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"st",
+				"stylesheet"
+			],
+			[
+				"inp",
+				"inputb\tinput - button"
+			],
+			[
+				"da",
+				"day"
+			],
+			[
+				"mon",
+				"month"
+			],
+			[
+				"odli",
+				"odliczanie()\ttimer.js"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"con",
+				"con\tCSS - content: '';"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"mad",
+				"max-width"
+			],
+			[
+				"tran",
+				"transition\tCSS - transition: ;"
+			],
+			[
+				"bco",
+				"background-color"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"met",
+				"method\tAttr"
+			],
+			[
+				"tra",
+				"transition\tCSS - transition: ;"
+			],
+			[
+				"pr",
+				"pos:r\tposition:relative"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"co",
+				"col\tcolor"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"mx-",
+				"m-xl-auto \tBootstrap 4 Class"
+			],
+			[
+				"pars",
+				"parseInt〔function〕"
+			],
+			[
+				"getEle",
+				"getElementsByTagName〔function〕"
+			],
+			[
+				"func",
+				"function〔keyword〕"
+			],
+			[
+				"on",
+				"onload()\tscript.js"
+			],
+			[
+				"cre",
+				"createElement〔function〕"
+			],
+			[
+				"pok",
+				"pokazWezly()\tscript.js"
+			],
+			[
+				"hes",
+				"hasChildNodes〔function〕"
+			],
+			[
+				"tex",
+				"text2"
+			],
+			[
+				"ind",
+				"indexOf('aSome')"
+			],
+			[
+				"cha",
+				"charAt(i)"
+			],
+			[
+				"S",
+				"String(value)"
+			],
+			[
+				"tol",
+				"toLocaleDateString()"
+			],
+			[
+				"getM",
+				"getMinutes()"
+			],
+			[
+				"htm",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"po",
+				"pokazTytul()\t"
+			],
+			[
+				"tytul",
+				"tytul()\t"
+			],
+			[
+				"Su",
+				"SublimeText"
+			],
+			[
+				"thi",
+				"this"
+			],
+			[
+				"kursy",
+				"kursy(tytul)\t"
+			],
+			[
+				"kurs",
+				"kursExel"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				".",
+				".zshrc"
+			],
+			[
+				"ali",
+				"alias"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ib",
+				"d-ib\tdisplay: inline-block;"
+			],
+			[
+				"s",
+				"style\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7233,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"jshi",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"new  fo",
+				"File: New Folder Relative to Current View"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"prefer",
+				"Preferences: Settings"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"key bin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"ftp",
+				"FTPSync: Setup FTPSync in this folder"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packe",
+				"Package Control: List Packages"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"ali",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: List Packages"
+			],
+			[
+				"perm",
+				"Permute Lines: Unique"
+			],
+			[
+				"shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"linter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax:ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: h - HTML document"
+			],
+			[
+				"node sni",
+				"Snippet: Angular 2 ngModel Snippet"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"syn",
+				"Set Syntax: CSS"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 615.0
+	},
+	"console":
+	{
+		"height": 260.0,
+		"history":
+		[
+			"clear",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/bthosting"
+	],
+	"file_history":
+	[
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/index.html",
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/js/app.js",
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/js/dogPack.js",
+		"/Users/2balanced/.jshintrc",
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/css/stylesheet.css",
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/js/min/dogPack-min.js",
+		"/Users/2balanced/Documents/!GitHub repositorys/My-Learning-Of-JavaScript-and-Front-end-Frameworks/handlebars/bower_components/handlebars/lib/handlebars/source.rb",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/2balanced/.zshrc",
+		"/Users/2balanced/Documents/!GitHub repositorys/2balanced-website/files/index.html",
+		"/Users/2balanced/Documents/!GitHub repositorys/2balanced-website/files/2balanced.sublime-project",
+		"/Users/2balanced/Sites/2balanced/2balanced-edena/files/neko-framework/css/layout/neko-framework-layout.css",
+		"/Users/2balanced/Sites/2balanced/2balanced-edena/files/index.html",
+		"/Users/2balanced/Sites/2balanced/2balanced-edena/files/neko-framework/js/neko-framework.js",
+		"/Users/2balanced/Sites/2balanced/2balanced-edena/files/neko-framework/css/layout/neko-framework-layout_BCK.css",
+		"/Users/2balanced/Desktop/nauka-js/handlebars/css/stylesheet.css",
+		"/Users/2balanced/Desktop/nauka-js/handlebars/index.html",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/2balanced/Desktop/PSD to HTML/pccbs/index.html",
+		"/Users/2balanced/Library/Caches/com.binarynights.ForkLift-3/E36EE1E9-285D-4ADA-AB50-87587AA8E4B2/index.php",
+		"/Users/2balanced/Desktop/nauka-js/galery/index.html",
+		"/Users/2balanced/Desktop/nauka-js/galery/style.css",
+		"/Users/2balanced/Desktop/nauka-js/galery/script.js",
+		"/Users/2balanced/Desktop/nauka-js/test/thanks.html",
+		"/Users/2balanced/Desktop/nauka-js/test/timer.js",
+		"/Users/2balanced/Desktop/nauka-js/ComingSoon/index.php",
+		"/Users/2balanced/Desktop/nauka-js/ComingSoon/style.css",
+		"/Users/2balanced/Desktop/nauka-js/ComingSoon/ComingSoon.sublime-project",
+		"/Users/2balanced/Desktop/nauka-js/nauka.sublime-project",
+		"/Users/2balanced/Desktop/nauka-js/script.js",
+		"/Users/2balanced/Desktop/nauka-js/index.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/JavaScript/-Kurs JS materialy/9_6_get_element_by_tag/script.js",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/7/7_1/sciezki/index.html",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/6/6_6/pobieranie/index.html",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/Fetch.sublime-settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/ftpsync.settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/6/6_1/wyrownanie.py",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/5/5_6/index.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/5/5_6/custom.js",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/5/5_4/zwijanie_kodu.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/5/5_3/sortowanie.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/5/5_1/wyrazenia_reg.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Efektywna praca w Sublime Text/ materialy_do_kursu/4/4_4/otaczanie_znacznikiem.html",
+		"/etc/ssh_config",
+		"/Users/2balanced/.ssh_config",
+		"/Users/2balanced/.oh-my-zsh/themes/cobalt2.zsh-theme",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Podstawy Programowania/10-Rozwiazywanie problemow/script.js",
+		"/Users/2balanced/Desktop/index.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/StrefaKursow/Podstawy Programowania/10-Rozwiazywanie problemow/script2.js",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/Efektywna praca w Sublime Text/materialy_do_kursu/3/3_1/helpers.less",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/User/htmlcsstest",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/Efektywna praca w Sublime Text/materialy_do_kursu/2/2_5/index.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ !Programowanie/Efektywna praca w Sublime Text/materialy_do_kursu/2/2_6/wyszukiwanie.html",
+		"/Volumes/DATA/  Rozwoj osobisty/ Programowanie/JavaScript/ Interactivity with JavaScript – Coursera/4 - Week Four/Aleksander Tymczenko test result.html",
+		"/Users/2balanced/Library/Application Support/Sublime Text 3/Packages/LiveStyle/LiveStyle.sublime-settings",
+		"/Users/2balanced/Library/Application Support/TaskPaper/theme.css",
+		"/Users/2balanced/Downloads/enfold 1/style.css",
+		"/Volumes/DATA/ PULPIT DESKTOP/OMniam Jay Jamuna strona Niam Niam/style-hot.css"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"$1 ",
+			"/Users/2balanced/Desktop/Slawek Hepatica/BackUp 10.10.2016",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dogpac",
+			"dogp",
+			"jQuery",
+			"$",
+			".language",
+			" language ",
+			"switchLanguage",
+			"languageFilter",
+			"fw-image1",
+			"cliet",
+			"card-f",
+			"homeb",
+			"inner",
+			"h2",
+			"faster",
+			"220",
+			"hover",
+			"RGBA",
+			"245",
+			"240",
+			"<li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Disabled</a>\n      </li>",
+			"div",
+			"1 of 2",
+			"btn-primary",
+			"carouselExampleIndicators",
+			"<li class=\"nav-item\">\n                 <a class=\"nav-link\" href=\"#\">Features</a>\n              </li>",
+			".innerHTML",
+			"div",
+			"hour",
+			"cena",
+			"tytul",
+			"kategoria",
+			"cena",
+			"tytul",
+			"#",
+			"$",
+			"#",
+			"select",
+			"$",
+			"#",
+			"$",
+			"#",
+			"$",
+			"#",
+			"$",
+			"</div>",
+			"sdf",
+			"(\t)\t\t",
+			"z.sh",
+			"debitis",
+			"Temporibus",
+			"javascript",
+			"legend",
+			"Legend",
+			"legend",
+			"Legend",
+			"legend",
+			"Legend",
+			"legend",
+			"Legend",
+			"legend",
+			"Legend",
+			"legend",
+			"even",
+			"></",
+			"cillum",
+			"data",
+			"type",
+			"data",
+			"label",
+			">",
+			"label",
+			"p",
+			"=\"\">",
+			"li",
+			"href",
+			"ipsum",
+			"Lorem",
+			"li",
+			"href",
+			"background",
+			"\n\t",
+			"x-block-grid",
+			"koamontreal.com",
+			" ",
+			"home",
+			"placeholder",
+			"text size"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ipsum",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14,
+										15
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/angle_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_enabled": true,
+							"intellitip_row": 0,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bthosting.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"dog",
+				"js/dogPack.js"
+			],
+			[
+				"dogp",
+				"js/min/dogPack-min.js"
+			],
+			[
+				"nau",
+				"~/Desktop/nauka-js/index.html"
+			],
+			[
+				"",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/nauka-js/nauka.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
