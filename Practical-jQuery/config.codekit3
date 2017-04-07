@@ -7,7 +7,7 @@
 		"uuidString": "3DF7E6F4-03B6-4923-B1A2-004270830D63"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/indeks.html": {
 		"ft": 8192,
@@ -35,6 +35,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/min\/jquery.akordeon-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/min\/scripts-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/min\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1036,6 +1045,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -1860,14 +1873,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -1930,7 +1935,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
