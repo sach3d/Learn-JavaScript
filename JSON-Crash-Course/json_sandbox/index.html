@@ -11,15 +11,13 @@
     var person = {
       name: "Alex",
       age: 48,
-      email: function(){
-        return 'alex@gmail.com'
-      },
+      email: 'alex@gmail.com',
       address: {
         street: "Some Street 10",
         city: "Lublin"
       },
       children: ["Ala", "Nadia"]
-    }
+    };
 
     var people = [
       {
@@ -36,10 +34,14 @@
       }
     ];
 
+    var output = '';
+
     for (var i = 0; i < people.length; i++) {
-      document.getElementById('people').innerHTML = "<li>" + people[i] + "</li>";
-      //console.log(people[i]);
+      output += "<li>" + people[i].name + "</li>";
+
+      document.getElementById('people').innerHTML = output;  
     }
+      console.log(person);
 
 
     //person = JSON.stringify(person);
@@ -85,21 +87,22 @@
       document.getElementById('people').innerHTML = output;
       */
 
-      // var xhttp = new XMLHttpRequest();
-      // xhttp.onreadystatechange = function() {
-      //     if (this.readyState == 4 && this.status == 200) {
-      //       var response = JSON.parse(xhttp.responseText);
-      //       var people = response.people;
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState === 4 && this.status === 200) {
+            var response = JSON.parse(xhttp.responseText);
+            //console.log(response.people);
+            var people = response.people;
 
-      //       var output = '';
-      //       for(var i = 0;i < people.length;i++){
-      //         output += '<li>'+people[i].name+'</li>';
-      //       }
-      //       document.getElementById('people').innerHTML = output;
-      //     }
-      // };
-      // xhttp.open("GET", "people.json", true);
-      // xhttp.send();
+            var output = '';
+            for(var i = 0; i < people.length; i++){
+              output += '<li>'+people[i].name+'</li>';
+            }
+            document.getElementById('people').innerHTML = output;
+          }
+      };
+      xhttp.open("GET", "people.json", true);
+      xhttp.send();
 
     </script>
   </body>
