@@ -1,0 +1,201 @@
+/*Colors*/
+.color-cream {
+  background-color: #fcf3da; }
+
+.color-light-grey {
+  background-color: whitesmoke; }
+
+.fa-facebook-square {
+  color: red; }
+
+.fa-facebook-square:hover {
+  color: #3b5998; }
+
+/*Typography*/
+h1, h2, h3, h4, h5, p, a, ul, li, .input-group, .btn, .badge, .contact-top, div {
+  font-family: 'Monda', sans-serif !important; }
+
+.display-4 {
+  font-size: 3rem; }
+
+.form-control::-webkit-input-placeholder {
+  border: 1px solid gainsboro;
+  font-size: 0.8rem;
+  color: #c8c8c8; }
+
+.form-control::-moz-placeholder {
+  border: 1px solid gainsboro;
+  font-size: 0.8rem;
+  color: #c8c8c8; }
+
+.form-control:-ms-input-placeholder {
+  border: 1px solid gainsboro;
+  font-size: 0.8rem;
+  color: #c8c8c8; }
+
+.form-control::placeholder {
+  border: 1px solid gainsboro;
+  font-size: 0.8rem;
+  color: #c8c8c8; }
+
+/*Top navbar banner wraper*/
+#callus {
+  list-style-type: none;
+  height: 45px;
+  max-width: 960px;
+  margin: 0 auto; }
+
+#callus-wrap {
+  border-bottom: 1px solid rgba(123, 123, 123, 0.3); }
+
+#wrapper-top {
+  border-bottom: 4px red solid; }
+
+.contact-top {
+  float: left;
+  vertical-align: middle;
+  margin-top: 7px;
+  font-size: 0.8rem; }
+
+.social-top {
+  float: right;
+  margin-top: 7px; }
+
+#navbar-top, .inner-nav-wrap {
+  margin: 0 auto;
+  max-width: 960px; }
+
+.navbar {
+  max-width: 960px; }
+
+.navbar li {
+  padding: 0 0.8rem; }
+
+.navbar a.nav-link:hover {
+  border-top: solid 4px red;
+  color: red;
+  margin-top: -8px; }
+
+.navbar .active {
+  border-top: solid 4px red;
+  margin-top: -7px; }
+
+.inner-nav-wrap a {
+  float: left; }
+
+.inner-nav-wrap .navbar {
+  float: right;
+  line-height: 3rem; }
+
+/* Content */
+.contentBand, .container-fluid {
+  padding: 5rem 0; }
+
+.contentBand-sm {
+  padding: 3rem 0 0 0;
+  margin-bottom: -2rem; }
+
+.badge-danger {
+  width: 100%;
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45); }
+
+.card-deck, .row, .contentBand {
+  width: 85%;
+  margin: auto; }
+
+.card-img-top {
+  display: inline-block;
+  width: 100%;
+  margin-top: -1rem; }
+
+.cliets-logo {
+  border-bottom: solid 2px rgba(200, 200, 200, 0.3);
+  padding: 5rem 0; }
+
+.save-money {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.response-back {
+  xdisplay: block;
+  background-size: cover;
+  height: 28rem;
+  z-index: 333; }
+
+.response-top {
+  width: 80%;
+  background-color: rgba(0, 255, 255, 0.3);
+  height: 80%;
+  margin-top: 2%;
+  border: 1px solid #ebebeb;
+  border-radius: 0.3em; }
+
+/*Footer*/
+.card-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.copyright {
+  border-top: solid 2px rgba(200, 200, 200, 0.5); }
+
+.card-footer .btn {
+  display: inline-block;
+  float: left; }
+
+.foot-box {
+  padding: 1.5rem;
+  font-size: 0.8rem; }
+
+.copy {
+  color: #c8c8c8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  margin-top: 1rem; }
+
+.foot-box img {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+
+.footer-h {
+  margin-bottom: 1.2rem;
+  font-size: 1rem; }
+
+.bottom-nav {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem; }
+
+.bottom-nav .nav-link {
+  color: red; }
+
+.bottom-nav .nav-link:hover {
+  color: #c8c8c8; }
+
+/*====================================================================*/
+/*Small devices (portrate phones, 320px and up)*/
+@media (min-width: 320px) and (max-width: 576px) {
+  .card-block {
+    margin-bottom: 3rem;
+    padding-bottom: 0; }
+  .first-band {
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+    padding-top: 2rem;
+    width: 100%;
+    border-top: 1px solid #c8c8c8; }
+  #wrapper-top {
+    border-bottom: none; }
+  .contact-top {
+    margin-left: 0.3rem; }
+  .navbar-brand img {
+    width: 203px;
+    height: 64px;
+    margin-left: 0.3rem; }
+  .badge-danger {
+    font-size: 1.5rem; } }

@@ -1,0 +1,26 @@
+.container-all {
+	color: $white;
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%, -40%);
+}
+
+.container-content {
+	height: 100%;
+}
+
+.container-content .content-form {
+	background-color: $white;
+	color: #202020;
+	position: relative;
+	padding: 50px;
+
+	  // Only affects large screens
+  @include breakpoint(large) {
+    	height: 552px;
+  }
+}

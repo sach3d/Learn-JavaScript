@@ -1,0 +1,21 @@
+.main-title {
+	display: block;
+	margin-bottom: 50px;
+	margin-left: 340px;
+	position: sticky;
+	left: 45%;
+	text-align: center;
+
+	@include breakpoint(medium down) { 
+  		margin-bottom: 15px;
+  		display: block;
+  		width: 100vw;
+  	}
+}
+
+.main-title h1 {
+		@include breakpoint(medium down) { 
+  		font-size: 2.5rem;
+  		line-height: 1;
+  	}
+}

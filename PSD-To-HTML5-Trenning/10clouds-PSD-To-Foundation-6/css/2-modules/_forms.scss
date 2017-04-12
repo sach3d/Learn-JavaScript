@@ -1,0 +1,159 @@
+//Gender selector – radio buttons
+
+.gender-selector {
+    margin-bottom: 25px;
+}
+
+.gender-selector input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.female {
+    background-image: url(../img/female-inactive.png);
+}
+
+.female:hover {
+	background-image: url(../img/female-active.png);
+}
+
+.male {
+    background-image: url(../img/male-inactive.png);
+}
+
+.male:hover {
+    background-image: url(../img/male-active.png);
+}
+
+.gender-selector input:active + .male {
+    background-image: url(../img/male-active.png);
+}
+
+.gender-selector input:active + .female {
+    background-image: url(../img/female-active.png);
+}
+
+.gender-selector input:checked + .female {
+	background-image: url(../img/female-active.png);
+}
+
+.gender-selector input:checked + .male {
+	background-image: url(../img/male-active.png);
+}
+
+.switcher {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 57px;
+    height: 50px;
+}
+
+
+//form filds settings
+[type='text'],
+[type='month'],
+[type='number'],
+[type='tel'],
+textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+    border-bottom: 2px solid #dfdfe4;
+    border-radius: 0;
+    background-color: $white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #0a0a0a;
+    transition: border-color 0.25s ease-in-out;
+    appearance: none;
+}
+
+[type='text']:focus,
+[type='month']:focus,
+[type='number']:focus,
+[type='tel']:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #531fc0;
+    background-color: $white;
+    transition: border-color 0.25s ease-in-out;
+}
+
+legend,
+label {
+    color: $medium-gray;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+//Date of Birth filds
+
+.dob-day,
+.dob-month,
+.dob-year {
+    [type='text'],
+    [type='month'] {
+        height: 50px;
+        border: 2px solid #dfdfe4;
+
+        @include breakpoint(small only) {
+			text-align: center;}
+    }
+    [name="day"] {
+        text-align: center;
+        //width: 50px
+    }
+}
+
+.dob-day,
+.dob-month,
+.dob-year {
+    [type='text']:focus,
+    [type='month']:focus {
+        border: 2px solid #531fc0;
+        transition: border-color 0.25s easy-in-out;
+    }
+}
+
+.l-name,
+.l-mobile {
+    transform: translate(0, 4px);
+}
+
+.dateofbirth .column, .dateofbirth .columns {
+        @include breakpoint(small only) {
+            padding: 0;
+        }
+}
+
+.emdash {
+    color: $medium-gray;
+    display: inline-block;
+    transform: translate(0, 10px);
+    text-align: center;
+}
+
+input.large-month { display: block; }
+input.small-month { display: none; }
+
+@media (max-width: 500px) { 
+    input.large-month { display: none; }
+    input.small-month { display: block; }
+}
+
+
+
+
+
+
+
+

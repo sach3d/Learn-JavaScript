@@ -1,0 +1,44 @@
+
+.btn-container {
+	position: absolute;
+	bottom: -25px;
+	right: -50px;
+	width: 187px + 50px;
+	height: 50px;
+}
+
+.btn-container .button {
+	width: 187px + 50px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 25px;
+	text-transform: uppercase;
+	border-right: 50px rgb(127, 73, 255) solid;
+	background-color: #7f49ff;
+	background-image: -webkit-gradient(linear, left center, right center, from(rgb(127, 73, 255)), to(rgb(87, 0, 255)));
+	background-image: -webkit-linear-gradient(left, rgb(127, 73, 255), rgb(87, 0, 255));
+	background-image: -moz-linear-gradient(left, rgb(127, 73, 255), rgb(87, 0, 255));
+	background-image: -o-linear-gradient(left, rgb(127, 73, 255), rgb(87, 0, 255));
+	background-image: -ms-linear-gradient(left, rgb(127, 73, 255), rgb(87, 0, 255));
+	background-image: linear-gradient(left, rgb(127, 73, 255), rgb(87, 0, 255));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#7f49ff', EndColorStr='#5700ff');
+}
+
+.btn-container {
+  // Only affects medium screens and smaller
+  @include breakpoint(medium down) { 
+  	left: 50%;
+  	transform: translate(-50%, 0)}
+}
+
+
+.button-arrow {
+	background-image: url(../img/submit-arrow.png);
+	background-repeat: no-repeat;
+    display: block;
+    height: 20px;
+    width: 30px;
+	position: absolute;
+	right: 5px;
+	top: 20px;
+}
