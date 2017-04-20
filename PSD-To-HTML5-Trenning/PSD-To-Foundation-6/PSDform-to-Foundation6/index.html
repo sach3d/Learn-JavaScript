@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10clouds Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <section class="row align-center small-10 container-all">
+        <!-- Main title -->
+        <div class="row align-center main-title animatedParent">
+            <h1 class="columns large-12 medium-10 small-10 animated bounceInLeft">Your account</h1>
+        </div>
+        <!-- Main wrapper row -->
+        <div class="row">
+            <div class="animatedParent container-content columns large-expand medium-12 small-10">
+                <!-- Left Image -->
+                <div class="animated bounceInLeft float-left show-for-large">
+                    <img src="img/form_left-img.png" alt="10clouds studio">
+                </div>
+                <!-- Form container -->
+                <div class="animated bounceInRight float-left content-form columns large-6 medium-10 small-12">
+                    <p>Take it all with you. Switch between devices, and pick up.
+                        <!-- Form -->
+                        <form action="send.php" id="form" method="post" accept-charset="utf-8" data-abide>
+                            <!-- Name input-->
+                            <legend class="l-name">Your Name</legend>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <input type="text" name="name" id="name" pattern="([A-zÀ-ž\s]){2,}" required>
+                                </div>
+                            </div>
+                            <!-- Mobile input-->
+                            <legend class="l-mobile">Mobile</legend>
+                            <div class="row">
+                                <div class="countries-codes columns large-4 medium-4 small-6">
+                                    <input type="text" name="codes" list="countries-codes" value="+48 (PL)">
+                                    <datalist id="countries-codes">
+                                        <option value="+48 (PL)">
+                                        <option value="+47 (NO)">
+                                    </datalist>
+                                </div>
+                                <div class="mobile columns large-8 medium-8 small-6">
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9\s]{9,}" placeholder="123 345 789" required>
+                                </div>
+                            </div>
+                            <!-- Gender Selector -->
+                            <legend>Gender</legend>
+                            <div class="row">
+                                <div class="gender-selector">
+                                    <input checked="checked" id="female" type="radio" name="gender" value="female" />
+                                    <label class="switcher female" for="female"></label>
+                                    
+                                    <input id="male" type="radio" name="gender" value="male" checked="true" />
+                                    <label class="switcher male" for="male"></label>
+                                </div>
+                            </div>
+                            <!-- Date of Birth inputs -->
+                            <legend class="l-dob">Date of Birth</legend>
+                            <div class="dateofbirth row align-center">
+                                <div class="dob-day columns large-2 medium-2 small-3">
+                                    <input type="text" name="day" list="day" placeholder="01" pattern="[0-9]{2,}" required>
+                                </div>
+                                <div class="columns large-1 medium-1 small-1 emdash">
+                                    <p>&mdash;</div>
+                                <div class="dob-month columns large-4 medium-4 small-3">
+                                    <input type="text" name="month" class="large-month" list="month" placeholder="January" required>
+                                    <input type="text" name="month" class="small-month" list="month" placeholder="01" required>
+                                    <datalist id="month">
+                                        <option value="">-----</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </datalist>
+                                </div>
+                                <div class="columns large-1 medium-1 small-1 emdash">
+                                    <p>&mdash;</div>
+                                <div class="dob-year columns large-4 medium-4 small-4">
+                                    <input type="text" name="year" placeholder="1990" pattern="[0-9]{4,}" required>
+                                </div>
+                            </div>
+                        <!-- Submit button -->
+                            <div class="btn-container">
+                                    <input type="submit" class="button" value="Submit">
+                                    <span class="button-arrow"></span>
+                            </div>
+                        </form>
+                </div>
+                <div class="animated bounceInRight float-left tab-nav show-for-large">
+                    <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+                        <li class="tabs-title"><a href="#panel1v" aria-selected="true">01</a></li>
+                        <li class="tabs-title is-active"><a href="#panel2v">02<br />personal</a></li>
+                        <li class="tabs-title"><a href="#panel3v">03</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/min/app-min.js"></script>
+
+    <script>
+     //$('#form').foundation('validateForm'); 
+     $('#month'). 
+    </script>
+</body>
+
+</html>

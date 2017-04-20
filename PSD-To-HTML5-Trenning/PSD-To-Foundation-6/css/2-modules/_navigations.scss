@@ -1,0 +1,29 @@
+.tab-nav {
+	height: 255px;
+	display: block;
+	position: relative;
+}
+
+.tab-nav ul {
+	border: 0;
+	position: absolute;
+	width: 25px;
+	top: 50%;
+}
+
+.tab-nav li a, .tab-nav .is-active a {
+	height: 85px;
+	width: 25px;
+	padding: 10px;
+	line-height: 1.2;
+	margin: 0;
+	color: rgba(255,255,255,0.25);
+	border-top: 2px solid rgba(255,255,255,0.25);
+}
+
+.tab-nav .is-active a {	
+	border-top: 2px solid #1af2b7;
+	color: $white;
+}
+
+
