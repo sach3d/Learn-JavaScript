@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style>
+form{
+    max-width: 300px;
+    background: #F3F3F3;
+    margin: auto;
+    padding: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+label span{
+    float:left;
+	margin-right: 10px;
+}
+label input[type=file]{
+    display: block;    
+	margin-left: 95px;
+}
+</style>
+</head>
+<body>
+
+<form method="post" action="send_attachments.php" enctype="multipart/form-data">
+<label>
+<span>Your Name</span> 
+	<input type="text" value="test name" name="s_name" />
+</label>
+<label>
+<span>Your Email</span>
+	<input type="email" value="saaraan@gmail.com"  name="s_email" />
+</label>
+
+<label>
+<span>Message</span>
+	<textarea name="s_message"></textarea>
+</label>
+
+<label>
+<span>Attachments</span>
+	<input type="file" name="file[]" />
+    <input type="file" name="file[]" />
+    <input type="file" name="file[]" />
+</label>
+<label>
+<input type="submit" value="Send" />
+</label>
+</form>
+</body>
+</html>
